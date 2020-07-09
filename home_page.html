@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <meta charset="utf-8"/> -->
+    <title>New Tab</title>
+    <style>
+        html {
+            align-items: center;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            margin: 0;
+        }
+        body {
+            display:flex;
+            margin: 1em;
+            padding: 1em;
+            background-color: #987654;
+            border: 4px solid #313131;
+        }
+
+        h1 {
+            font-size: 2em;
+            grid-column: 1 / -1;
+            margin: 0;
+            text-align: center;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        a:focus
+        a:hover{
+            color: maroon;
+        }
+
+        nav {
+            display: grid;
+            grid-row-gap: 2em;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            margin: 0 1em;
+            min-width: 24em;
+            padding: 1em 0;
+        }
+
+        ul{
+            list-style-type: none;
+            margin: 1em;
+            padding: 0;
+            white-space: nowrap;
+        }
+        li:first-child{
+            font-weight: bold;
+            line-height: 2em;
+        }
+      
+        img {
+            display:block;
+            border: 2px solid #313131;
+            /* height: auto; */
+            /* margin: 0 1em; */
+            margin-left: auto;
+            margin-right: auto;
+            alt: "Coffee Time";
+        }
+        form{
+            font-size: 2em;
+            grid-column: 1 / -1;
+            margin: 1em;
+            position: relative;
+            text-align: center;
+            /* height: 75%; */
+        }
+        form input[type="search"] {
+            background-color: #987654;
+            border: none;
+            box-sizing: border-box;
+            font-weight: bold;
+            font: inherit;
+            width: 100%;
+        }
+        form label{
+            /* font-size: 15px; */
+            color: #1d81b2;
+            left: -1em;
+            position: absolute;
+        }
+        form:focus-within input::placeholder{
+            opacity: 0;
+        }
+
+    </style>
+    <body>
+        <img src="giphy.gif" >
+    </body>
+        
+    <body>
+        <nav>
+            <h1> ~ Grab a Big Wave ~ </h1>
+            <form action="https://duckduckgo.com/" method="GET">
+                <label for="q">></label>
+                <input autofocus id="q" name="q" type="search" placeholder="duckduckgo search...">
+            </form>
+            <ul>
+                <li>Daily</li>
+                <li><a href="https://www.reddit.com">Reddit</a></li>
+                <li><a href="https://www.4chan.org">4chan</a></li>
+                <li><a href="https://www.youtube.com">youtube</a></li>
+            </ul>
+            <ul>
+                <li>Shopping</li>
+                <li><a href="https://www.woot.com">Woot</a></li>
+                <li><a href="https://www.amazon.com">Amazon</a></li>
+                <li><a href="https://www.ebay.com">Ebay</a></li>
+            </ul>
+            <ul>
+                <li>News</li>
+                <li><a href="https://boards.4channel.org/g/">g/</a></li>
+                <li><a href="https://www.reddit.com/r/netsec/">netsec</a></li>
+                <li><a href="https://www.reddit.com/r/news/">news</a></li>
+            </ul>
+            <ul>
+                <li>Entertainment</li>
+                <li><a href="https://www.crunchyroll.com">Crunchyroll</a></li>
+                <li><a href="https://www.netflix.com">Netflix</a></li>
+                <li><a href="https://www.hulu.com">Hulu</a></li>
+            </ul>
+            <ul>
+                <li>Random</li>
+                <li><a href="https://www.4chan.org/w">Wallpapers</a></li>
+                <li><a href="https://www.4chan.org/wsg/">wsg/</a></li>
+            </ul>
+        </nav>
+    </body>
+
+
+
+
+</head>
+</html>
