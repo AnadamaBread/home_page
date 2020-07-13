@@ -98,19 +98,19 @@
 
     </style>
     <body>
-        <img src="giphy1.gif" >
-        <!-- <video  unmuted playsinline autoplay="true" loop width="240" height="320">
-            <source src="webmie.webm" type="video/webm" >
+        <!-- <img src="giphy1.gif" > -->
+        <video  muted playsinline autoplay="true" loop width="240" height="320">
+            <source src="webmie1.webm" type="video/webm" >
                 <script>
                     var video = document.currentScript.parentElement;
-                    // try{
-                    //     await video.play();
-                    // } catch(err) {
-                    //     video.controls = true;
-                    // }
+                    // var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+                    var isChromium = !!window.chrome;
+                    if(!isChromium){
+                        video.muted = false;
+                    }
                     video.volume = 0.1;
                 </script>
-        </video> -->
+        </video>
     </body>
         
     <body>
